@@ -10,6 +10,7 @@ export default function App() {
         <Text style={styles.sectionTitle}>Today's Tasks</Text>
         <View style={styles.items}>
           <Task task="First task" />
+          <Task task="Second task" />
         </View>
       </View>
     </View>
@@ -19,15 +20,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#ccc",
   },
   tasksWrapper: {
-    paddingTop: 80,
+    paddingTop: 40,
     paddingHorizontal: 20,
   },
   sectionTitle: {
     fontSize: 24,
     fontWeight: "bold",
   },
-  items: {},
+  items: {
+    marginTop: 20,
+  },
 });
